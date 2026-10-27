@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Apply for a position by providing your details below.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="phone">Contact Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       pattern="[0-9]{10}" maxlength="10" required>
+                <br><br>
+
+                <label for="city">Current City:</label>
+                <input type="text" id="city" name="city" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Job Details</legend>
+
+                <label for="position">Position Applied For:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select Position</option>
+                    <option value="web-developer">Web Developer</option>
+                    <option value="software-developer">Software Developer</option>
+                    <option value="data-analyst">Data Analyst</option>
+                    <option value="intern">Intern</option>
+                </select>
+                <br><br>
+
+                <label for="experience">Experience Level:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Select Experience</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="1-2-years">1-2 Years</option>
+                    <option value="3-plus-years">3+ Years</option>
+                </select>
+                <br><br>
+
+                <label for="education">Highest Education:</label>
+                <input type="text" id="education" name="education" required>
+                <br><br>
+
+                <label for="skills">Technical Skills:</label>
+                <textarea id="skills" name="skills" rows="4" cols="35"
+                          placeholder="Enter your skills" required></textarea>
+                <br><br>
+
+                <label for="joining">Available From:</label>
+                <input type="date" id="joining" name="joining">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="resume">Resume File:</label>
+                <input type="file" id="resume" name="resume"
+                       accept=".pdf,.doc,.docx">
+                <br><br>
+
+                <label for="coverletter">Cover Letter:</label>
+                <textarea id="coverletter" name="coverletter"
+                          rows="5" cols="35"
+                          placeholder="Write a short introduction"></textarea>
+            </fieldset>
+
+            <br>
+
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">
+                I confirm that the information provided is accurate.
+            </label>
+
+            <br><br>
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Job Application Demo</p>
+    </footer>
+</body>
+</html>
